@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Data } from '../../Interfaces/data.interface';
 
 @Component({
@@ -8,4 +8,5 @@ import { Data } from '../../Interfaces/data.interface';
 })
 export class ListComponent {
   @Input() items:Array<Data>=[];
+
 }

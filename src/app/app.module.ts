@@ -8,6 +8,7 @@ import { HomeComponent } from './Pages/home/home.component';
 import { DetailComponent } from './Pages/detail/detail.component';
 import { FavoritesComponent } from './Pages/favorites/favorites.component';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CommonModule } from '@angular/common';
   imports: [
     BrowserModule,
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

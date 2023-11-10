@@ -1,0 +1,60 @@
+.left-navbar {
+  //height: 140px;
+  padding-top: 1rem;
+  &__lists {
+    background-color: #EBECFA;
+  }
+
+  ol {
+    font-size: 14px;
+    font-weight: 500;
+    color: #323EC8;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+  }
+}
+.right-list {
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 0;
+    border-radius: 16px;
+  }
+  &__adress {
+    font-weight: 700;
+    font-size: 30px;
+    color: #191919;
+    padding-top: 1.5rem;
+  }
+  &__price {
+    font-weight: 500;
+    font-size: 16px;
+    color: #191919;
+  }
+  &__listing {
+    position: relative;
+    img {
+      width: 212px;
+      height: 180px;
+    }
+  }
+  &__star-img {
+    height: auto !important;
+    top: 25px;
+    right: 30px;
+    width: 24px !important;
+    margin-left: -0.7rem;
+  }
+  &__star-container {
+    position: absolute;
+    right: 30px;
+    width: 24px !important;
+    top: 30px;
+  }
+}
+
+.top-border {
+  height: 65px;
+  background-color: #fff;
+}
