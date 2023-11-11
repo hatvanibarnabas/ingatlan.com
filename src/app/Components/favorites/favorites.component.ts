@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { Data } from '../../Interfaces/data.interface';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-favorites',
@@ -7,5 +6,5 @@ import { Data } from '../../Interfaces/data.interface';
   styleUrl: './favorites.component.scss'
 })
 export class FavoritesComponent {
-  @Input() items:Array<Data>=[];
+
 }

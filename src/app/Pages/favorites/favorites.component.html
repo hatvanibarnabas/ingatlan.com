@@ -1,1 +1,56 @@
-<p>favorites works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="left-navbar shadow bg-white rounded">
+        <ul class="p-0 left-navbar__list-parent">
+          <a href="">
+            <ol class="left-navbar__lists">
+              <img src="assets/img/list.svg" alt="Ingatlan.com"><span class="m-2">Lista</span>
+            </ol>
+          </a>
+          <a routerLink="/favorites">
+            <ol class="left-navbar__favorites">
+              <img src="assets/img/star.svg" alt="Ingatlan.com"><span class="m-2">Kedvencek</span>
+            </ol>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="right-list">
+        <div class="right-list__title-container shadow p-3 mb-5 bg-white rounded">
+          <p class="right-list__title">
+            Lista
+          </p>
+          <p class="right-list__length">
+            {{items.length}}db
+          </p>
+        </div>
+        <div *ngFor="let item of items">
+          <a routerLink="/details">
+            <div class="row right-list__listing shadow mb-4 bg-white rounded">
+              <div *ngIf="item.status=='checked'" class="right-list__star-container shadow bg-white rounded">
+                <img src="/assets/img/checked-star.svg" alt="Ingatlan.com" class="right-list__star-img">
+              </div>
+              <div *ngIf="item.status=='unchecked'" class="right-list__star-container shadow bg-white rounded">
+                <img src="/assets/img/unchecked-star.svg" alt="Ingatlan.com" class="right-list__star-img">
+              </div>
+              <div class="col-md-3 p-0 right-list__bg-{{item.adId}}">
+
+              </div>
+              <div class="col-md-9">
+                <h3 class="right-list__adress">
+                  {{ item.address }}
+                </h3>
+                <p class="right-list__price">
+                  {{ item.price }}
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
