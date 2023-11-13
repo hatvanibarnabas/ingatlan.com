@@ -10,7 +10,7 @@ export class JsonDataService {
         "adId": 100001,
         "address": "XIX. kerület, Kitalált utca 8.",
         "price": 45000000,
-        "image": "https://placehold.jp/300x350.png",
+        "image": "https://placehold.jp/800x600.png",
         "currency": "Ft",
         "uploadDate": "2021.10.20.",
         "description": "Szép csendes környezetben eladó egy felújítandó lakás. A lakáshoz tartozik egy 10 négyzetméteres tároló is ami a pincében található.",

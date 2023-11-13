@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './Components/list/list.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { DetailComponent } from './Pages/detail/detail.component';
-import { FavoritesComponent } from './Pages/favorites/favorites.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { ShowFavoritesComponent } from './Pages/favorites/show-favorites.component';
+import { FavoritesComponent } from './Components/favorites/favorites.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { RouterModule, Routes } from '@angular/router';
     ListComponent,
     HomeComponent,
     DetailComponent,
-    FavoritesComponent
+    FavoritesComponent,
+    ShowFavoritesComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

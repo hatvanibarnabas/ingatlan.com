@@ -28,9 +28,6 @@ a {
     font-size: 30px;
     color: #191919;
     padding-top: 1.5rem;
-    @media(max-width: 767px) {
-      width: 250px;
-    }
   }
   &__price {
     font-weight: 500;
@@ -40,17 +37,9 @@ a {
   &__listing {
     position: relative;
     height: 180px;
-    @media (max-width: 767px) {
-      height: 100%;
-    }
     img {
       width: 212px;
       height: 180px;
-      @media (max-width: 767px) {
-        width: 100%;
-        height: 170px;
-        object-fit: cover;
-      }
     }
   }
   &__star-img {
@@ -67,10 +56,6 @@ a {
     width: 32px !important;
     height: 32px !important;
     top: 30px;
-    @media(max-width: 767px) {
-      bottom: 100px;
-      top: auto;
-    }
   }
   &__title {
     font-weight: 700;
@@ -84,7 +69,7 @@ a {
     margin-bottom: 0;
   }
   &__bg-100001 {
-    background-image: url('https://placehold.jp/800x600.png');
+    background-image: url('https://placehold.jp/300x350.png');
     background-size: cover;
     background-position: center;
     border-radius: 7px 0 0 7px;
@@ -107,19 +92,4 @@ a {
     background-position: center;
     border-radius: 7px 0 0 7px;
   }
-  @media(max-width: 767px) {
-    &__bg-100001 {
-      background-image: none;
-    }
-    &__bg-100002 {
-      background-image: none;
-    }
-    &__bg-100003 {
-      background-image: none;
-    }
-    &__bg-100004 {
-      background-image: none;
-    }
-  }
 }
-

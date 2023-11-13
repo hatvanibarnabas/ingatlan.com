@@ -1,0 +1,115 @@
+.left-navbar {
+  //height: 140px;
+  padding-top: 1rem;
+  &__lists {
+    background-color: #EBECFA;
+  }
+  ol {
+    font-size: 14px;
+    font-weight: 500;
+    color: #323EC8;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.left-navbar {
+  //height: 140px;
+  padding-top: 1rem;
+  &__lists {
+    background-color: #EBECFA;
+  }
+  ol {
+    font-size: 14px;
+    font-weight: 500;
+    color: #323EC8;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+  }
+}
+a {
+  text-decoration: none;
+}
+.right-list {
+  &__title-container {
+    display: flex;
+    border-radius: 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__adress {
+    font-weight: 700;
+    font-size: 30px;
+    color: #191919;
+    padding-top: 1.5rem;
+  }
+  &__price {
+    font-weight: 500;
+    font-size: 16px;
+    color: #191919;
+  }
+  &__listing {
+    position: relative;
+    height: 180px;
+    img {
+      width: 212px;
+      height: 180px;
+    }
+  }
+  &__star-img {
+    height: auto !important;
+    top: 25px;
+    right: 30px;
+    width: 24px !important;
+    margin-left: -0.45rem;
+    margin-top: 0.2rem;
+  }
+  &__star-container {
+    position: absolute;
+    right: 30px;
+    width: 32px !important;
+    height: 32px !important;
+    top: 30px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  &__length {
+    color: #666;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  &__bg-100001 {
+    background-image: url('https://placehold.jp/800x600.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px 0 0 7px;
+  }
+  &__bg-100002 {
+    background-image: url('https://placehold.jp/800x600.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px 0 0 7px;
+  }
+  &__bg-100003 {
+    background-image: url('https://placehold.jp/366x377.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px 0 0 7px;
+  }
+  &__bg-100004 {
+    background-image: url('https://placehold.jp/500x400.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px 0 0 7px;
+  }
+}
+

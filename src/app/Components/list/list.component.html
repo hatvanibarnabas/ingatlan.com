@@ -28,7 +28,7 @@
           </div>
           <div *ngFor="let item of items">
             <a routerLink="/details/{{item.adId}}">
-              <div class="row right-list__listing shadow mb-4 bg-white rounded">
+              <div class="row right-list__listing shadow mb-4 bg-white rounded m-0">
                 <div *ngIf="item.status=='checked'" class="right-list__star-container shadow bg-white rounded">
                   <img src="/assets/img/checked-star.svg" alt="Ingatlan.com" class="right-list__star-img">
                 </div>
@@ -36,7 +36,7 @@
                   <img src="/assets/img/unchecked-star.svg" alt="Ingatlan.com" class="right-list__star-img">
                 </div>
                 <div class="col-md-3 p-0 right-list__bg-{{item.adId}}">
-
+                  <img [src]="item['image']" alt="" class="">
                 </div>
                 <div class="col-md-9">
                   <h3 class="right-list__adress">

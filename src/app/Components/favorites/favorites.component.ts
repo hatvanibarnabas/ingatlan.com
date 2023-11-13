@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Data } from '@angular/router';
 
 @Component({
   selector: 'app-favorites',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './favorites.component.scss'
 })
 export class FavoritesComponent {
-
+  @Input() items:Array<Data>=[];
 }

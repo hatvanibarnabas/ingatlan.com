@@ -1,1 +1,45 @@
-<p>detail works!</p>
+<section class="details">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <a href="javascript:void(0)" (click)="backClicked()">
+          <button type="button" class="details__back-button"><img src="/assets/img/arrow-left.svg" alt="Ingatlan.com" class="details__left-arrow"><span class="ml-3">Vissza</span></button>
+        </a>
+
+      </div>
+      <div class="col-md-9">
+        <div class="details__title-container shadow p-3 mb-5 bg-white rounded">
+          <p class="details__title">
+            Részletek
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="details__detail-img" *ngIf="item">
+      <img [src]="item['image']" alt="" class="">
+    </div>
+    <div class="details__detail-container shadow p-3 mb-5 bg-white rounded" *ngIf="item">
+      <h2>
+        {{item['address']}}
+      </h2>
+      <h3>
+        {{item['price']}}
+      </h3>
+      <h4 class="align-items-center d-flex gap-2">
+        <img src="/assets/img/calendar.svg" alt="Ingatlan.com" class="details__date mr-3">{{item['uploadDate']}}
+      </h4>
+      <p class="shadow p-3 mb-5 bg-white rounded">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+      <div class="details__contact-button-container">
+        <button type="button" class="details__contact-button">Kapcsolatfelvétel</button>
+      </div>
+      <div *ngIf="item['status']=='checked'" class="details__star-container shadow bg-white rounded">
+        <img src="/assets/img/checked-star.svg" alt="Ingatlan.com" class="details__star-img">
+      </div>
+      <div *ngIf="item['status']=='unchecked'" class="details__star-container shadow bg-white rounded">
+        <img src="/assets/img/unchecked-star.svg" alt="Ingatlan.com" class="details__star-img">
+      </div>
+    </div>
+  </div>
+</section>
